@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        
+        const random = Math.random();
+        
+        if (random >= 0 && random < 1/5 ){
+            computerMove = 'Head'
+        }
+        else if (random > 1/5 && random < 1){
+            computerMove = 'Tail'
+        }
+
+        if (computerMove === 'Head'){
+            result = 'You Guessed Wrong'
+        }
+        else if (computerMove === 'Tail'){
+            result = 'You Guessed it!!'
+        }
+
+        alert(`Your Choice Tail But My Choice ${computerMove}.${result}`)
+        
+
+        
+        ">Head</button>
+    <button onclick="
+            const random = Math.random();
+        
+        if (random >= 0 && random < 1/5 ){
+            computerMove = 'Head'
+        }
+        else if (random > 1/5 && random < 1){
+            computerMove = 'Tail'
+        }
+
+        if (computerMove === 'Tail'){
+            result = 'You Guessed Wrong'
+        }
+        else if (computerMove === 'Head'){
+            result = 'You Guessed it!!'
+        }
+
+        alert(`Your Choice Tail But My Choice ${computerMove}.${result}`)
+    ">Tail</button>
+</body>
+</html>
